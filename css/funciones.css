@@ -1,0 +1,63 @@
+.funcionDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+    width: 100%;
+}
+
+.funcionDiv #ciudad {
+    width: 50%;
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: .2rem solid var(--bg-color);
+    border-radius: var(--b-rad-min);
+    background-color: var(--bg-color);
+    color: var(--font-col);
+    cursor: pointer;
+}
+
+.funcionDiv-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.funcionDiv-horizontal.tablas {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.input input{
+    color: var(--bg-color);
+    border: .2rem solid var(--bg-color);
+    background-color: var(--font-col);
+    margin: .5rem;
+    padding: .5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: var(--b-rad-min);
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+
+.input input:focus {
+    border: .2rem solid var(--acento);
+    outline: none;
+}
+
+.resultados, .input {
+    padding: .5rem 1rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    border-radius: var(--b-rad-min);
+    background-color: var(--bg-color);
+}

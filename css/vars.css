@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif+Caption:ital@0;1&display=swap');
+
+:root {
+    --bg-color: #1e1e2e;
+    --bg-sec:   #313244;
+    --font-col: #cdd6f4; 
+    --acento:   #f38ba8;
+
+    --borde-rad: 1.5rem;
+    --b-rad-min:  .7rem;
+}

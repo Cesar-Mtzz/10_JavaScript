@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icons/favico.svg" type="image/svg">
+    <title>Practicas JavaScript</title>
+    <link rel = "stylesheet" href="../css/style.css">
+    <script src="../js/pag2.js"></script>
+    <script src="../js/menu.js"></script>
+</head>
+<body>
+    
+    <header>
+        <a id="btnAtras" href="../index.html"><img src="../icons/back.svg" alt="menu"></a>
+        <h1><span class="resaltar">Pagina 2 - Ciclos</span></h1>
+    </header>
+
+    <main>
+        <aside id="menus">
+            <div class="menu">
+                <p class="titulo">Indice</p>
+                <div id="submenu">
+                    <button onclick="mostrarTarjeta(1, 3)" >1. Suma de los numeros impares del 0 al 100</button>
+                    <button onclick="mostrarTarjeta(2, 3)" >2. Imprimir x cantidad de asteriscos</button>
+                    <button onclick="mostrarTarjeta(3, 3)" >3. Tablas de multiplar del 1 al 10</button>
+                </div>
+            </div>
+        </aside>
+
+        <div id="funciones">
+
+            <div class="contenido-funciones" id="problema1">
+                <p class="titulo">1. Suma de todos los numeros impares 0 - 100</p>
+                <div class="funcionDiv">
+                    <button onclick="sumarNumerosImpares()">Calcular</button>
+                    <p class="resultados" id="resultado-sumaImpares">Suma:</p>
+                </div>
+            </div>
+
+            <div class="contenido-funciones oculto" id="problema2">
+                <p class="titulo">2. Imprimir x cantidad de asteriscos</p>
+                <div class="funcionDiv">
+                    <div class="input">
+                        <label for="numeroAsteriscos">Cantidad de " * " a imprimir</label>
+                        <br>
+                        <input type="number" id="numeroAsteriscos" name="numeroAsteriscos">
+                    </div>
+                    <button onclick="imprimirAsteriscos()">Mostrar</button>
+                    <p class="resultados" id="resultado-asteriscos">Resultado:</p>
+                </div>
+            </div>
+
+            <div class="contenido-funciones oculto" id="problema3">
+                <p class="titulo">3. Tablas de multiplar del 1 al 10</p>
+                <div class="funcionDiv">
+                    <button onclick="tablasMultiplicar()">Mostrar</button>
+                    <div id="resultado-tablas" class="funcionDiv-horizontal tablas">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div id="textFooter">
+            <h3>
+                Martínez Cesar<br>
+                24 / 10 / 2026<br>
+                cmartinezm2106@gmail.com
+            </h3>
+        </div>
+        <img id="imgFooter" src="../img/pfp.jpg" alt="Imagen de mi perfil">
+    </footer>
+</body>
+</html>

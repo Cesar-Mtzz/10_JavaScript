@@ -1,0 +1,81 @@
+.btn-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: var(--borde-rad);
+    background-color: var(--bg-color);
+    border: .2rem solid var(--bg-color);
+    transition: ease-in-out .5s;
+}
+
+.btn-login:hover {
+    background-color: var(--bg-sec);
+    border: .2rem solid var(--acento);
+}
+
+#imgMenu {
+    height: 3rem;
+}
+
+.menu-login-flotante {
+    position: fixed;
+    top: 8rem;
+    left: 1rem;
+    z-index: 999;
+    width: 260px;
+    background-color: var(--bg-color);
+    border: .2rem solid var(--acento);
+    border-radius: var(--b-rad-min);
+    padding: 2rem;
+    box-shadow: 0 .8rem 2rem rgba(0, 0, 0, 0.5);
+    display: none; 
+}
+
+.menu-login-flotante.activo {
+    display: block;
+}
+
+.menu-login-flotante h3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 0; 
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--font-col);
+}
+
+.menu-login-flotante input {
+    width: 100%;
+    padding: .8rem;
+    margin-bottom: 1.5rem;
+    background: var(--bg-sec);
+    border: .2rem solid var(--bg-sec);
+    border-radius: var(--b-rad-min);
+    color: var(--font-col);
+    box-sizing: border-box; /* Evita que el input rompa el ancho */
+    transition: ease-in-out .5s;
+}
+
+.menu-login-flotante input:focus {
+    border: .2rem solid var(--acento);
+    outline: none;
+}
+
+.menu-login-flotante .btn-enviar {
+    width: 100%;
+    padding: .8rem;
+    background: var(--acento);
+    color: var(--bg-color);
+    border: none;
+    border-radius: var(--b-rad-min);
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+
+.menu-login-flotante .btn-enviar:hover {
+    background: var(--font-col);
+    color: var(--bg-color);
+
+}

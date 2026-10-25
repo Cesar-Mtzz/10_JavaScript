@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icons/favico.svg" type="image/svg">
+    <title>Practicas JavaScript</title>
+    <link rel = "stylesheet" href="../css/style.css">
+    <script src="../js/pag1.js"></script>
+    <script src="../js/menu.js"></script>
+</head>
+<body>
+    
+    <header>
+        <a id="btnAtras" href="../index.html"><img src="../icons/back.svg" alt="menu"></a>
+        <h1><span class="resaltar">Pagina 1 - Condicionales</span></h1>
+    </header>
+
+    <main>
+        <aside id="menus">
+            <div class="menu">
+                <p class="titulo">Indice</p>
+                <div id="submenu">
+                    <button onclick="mostrarTarjeta(1, 5)" >1. Selector de ciudad</button>
+                    <button onclick="mostrarTarjeta(2, 5)" >2. Calcular la suma</button>
+                    <button onclick="mostrarTarjeta(3, 5)" >3. Numero menor y mayor</button>
+                    <button onclick="mostrarTarjeta(4, 5)" >4. Calcular total neto</button>
+                    <button onclick="mostrarTarjeta(5, 5)" >5. Calcular sueldo de un trabajador</button>
+                </div>
+            </div>
+        </aside>
+
+        <div id="funciones">
+
+            <div class="contenido-funciones" id="problema1">
+                <p class="titulo">1. Selector de Ciudad</p>
+                <div class="funcionDiv">
+                    <select id="ciudad" name="ciudad">
+                        <option value="">Selecciona una ciudad de México</option>
+                        <option value="Ciudad 1">Ciudad 1</option>
+                        <option value="Ciudad 2">Ciudad 2</option>
+                        <option value="Ciudad 3">Ciudad 3</option>
+                    </select>
+                    <button onclick="datosCiudad()" >Enviar</button>
+                    <p class="resultados" id="resultado-ciudad">Resultado:</p>
+                </div>
+            </div>
+
+            <div class="contenido-funciones oculto" id="problema2">
+                <p class="titulo">2. Calcular la suma</p>
+                <div class="funcionDiv">
+                    <div class="input">
+                        <label for="numero">Ingrese un numero: (-1 / 0 para salir)</label>
+                        <br>
+                        <input type="number" id="numero" name="numero">
+                    </div>
+                    <div id="funcionDiv-horizontal">
+                        <button onclick="sumarNumeros(true)">Sumar</button>
+                        <button onclick="sumarNumeros(false)">Reiniciar</button>
+                    </div>
+                    <p class="resultados" id="resultado-suma">Suma:</p>
+                </div>
+            </div>
+
+            <div class="contenido-funciones oculto" id="problema3">
+                <p class="titulo">3. Mostrar el menor y mayor</p>
+                <div class="funcionDiv">
+                    <div class="input">
+                        <label for="numero1">Ingrese el 1er numero:</label>
+                        <input type="number" id="numero1" name="numero1">
+                        <br>
+                        <label for="numero2">Ingrese el 2do numero:</label>
+                        <input type="number" id="numero2" name="numero2">
+                        <br>
+                        <label for="numero3">Ingrese el 3er numero:</label>
+                        <input type="number" id="numero3" name="numero3">
+                    </div>
+                    <button onclick="ordenarNumeros()">Calcular</button>
+                    <p class="resultados" id="resultado-numeros">Resultado:</p>
+                </div>
+            </div>
+
+            <div class="contenido-funciones oculto" id="problema4">
+                <p class="titulo">4. Calcular total neto</p>
+                <div class="funcionDiv">
+                    <div class="input">
+                        <label for="nBruto">Ingrese importe bruto:</label>
+                        <br>
+                        <input type="number" id="nBruto" name="nBruto">
+                    </div>
+                    <button onclick="calcularNeto()">Calcular</button>
+                    <p class="resultados" id="resultado-neto">Resultado:</p>
+                </div>
+            </div>
+
+            <div class="contenido-funciones oculto" id="problema5">
+                <p class="titulo">5. Calcular sueldo del trabajador</p>
+                <div class="funcionDiv">
+                    <div class="input">
+                        <label for="nAnios">Ingrese cuantos años lleva trabajando:</label>
+                        <br>
+                        <input type="number" id="nAnios" name="nAnios">
+                    </div>
+                    <button onclick="calcularSueldo()">Calcular</button>
+                    <p class="resultados" id="resultado-sueldo">Resultado:</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div id="textFooter">
+            <h3>
+                Martínez Cesar<br>
+                24 / 10 / 2026<br>
+                cmartinezm2106@gmail.com
+            </h3>
+        </div>
+        <img id="imgFooter" src="../img/pfp.jpg" alt="Imagen de mi perfil">
+    </footer>
+</body>
+</html>

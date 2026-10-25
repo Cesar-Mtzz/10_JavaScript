@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icons/favico.svg" type="image/svg">
+    <title>Practicas JavaScript</title>
+    <link rel = "stylesheet" href="./css/style.css">
+    <script src="./js/menu.js"></script>
+</head>
+<body>
+    
+    <header>
+        <button class="btn-login" onclick="menuLogin()"><img id="imgMenu" src="./icons/menu.svg" alt="menu"></button>
+        <h1><span class="resaltar">Actividad 10, Estructuras y funciones</span></h1>
+    </header>
+
+    <aside id="menus">
+        <div class="menu index">
+            <p class="titulo">Paginas</p>
+            <p id="textoSubmenu">Para ver las opciones inicie sesion en el menu de la esquina superior izquierda</p>
+            <div id="submenu" class="oculto">
+                <a class="menu-link" href="./html/pag1.html">Pagina 1</a>
+                <a class="menu-link" href="./html/pag2.html">Pagina 2</a>
+                <a class="menu-link" href="./html/pag3.html">Pagina 3</a>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        <div id="textFooter">
+            <h3>
+                Martínez Cesar<br>
+                24 / 10 / 2026<br>
+                cmartinezm2106@gmail.com
+            </h3>
+        </div>
+        <img id="imgFooter" src="./img/pfp.jpg" alt="Imagen de mi perfil">
+    </footer>
+
+
+    <div class="menu-login-flotante" id="menuLogin">
+        <h3>Iniciar Sesión</h3>
+        <input type="text" placeholder="Usuario">
+        <input type="password" placeholder="Contraseña">
+        <button class="btn-enviar" onclick="mostrarSubmenu()">Entrar</button>
+    </div>
+</body>
+</html>
